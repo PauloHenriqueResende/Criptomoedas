@@ -1,0 +1,446 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    /* Reset de configs */
+
+    *{  text-decoration: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;;
+    }
+    /* Body config*/
+    body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color: hsla(228, 9%, 10%,1 );
+        color: white;
+        overflow-x: hidden;
+    }
+
+    /*Header estyle*/
+    header{
+        display: flex;
+        align-items: center;
+        background-color: rgb(12, 11, 11);
+        height: 5rem;
+        justify-content: space-between;
+        color: white;
+        width: 100vw;
+    }
+    /* Estilização do nav bar */
+    nav{
+        display: flex;
+        padding: 10px;
+        margin: 15px;
+        
+    }
+    nav a{
+        
+        padding: .7rem;
+        position: relative;
+    }
+    a{  font-size: 1.2rem;
+        color: rgb(255, 254, 254);
+    }
+    nav a::after{
+        content:" ";
+        background-color: rgb(243, 243, 243);
+        width:  0%;
+        height: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    nav a:hover::after{
+        width: 100%;
+        transition: 0.6s;
+    }
+
+    /*Estilização da logotipo do navbar*/
+    .logo{
+    margin: 25px;
+    padding-right: 2px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    }
+    .logo > img{
+        margin-right: .7rem;
+        height: 2.2rem;
+    }
+    /* Estilizaçao da hero section*/
+
+    main h1{
+        font-size: 2.8rem;
+        margin: 1rem;
+        margin-left: 0.5rem;
+        padding: 1rem;
+        letter-spacing: .1rem;
+    }  
+    .hero_section{
+    margin-top: 4rem;
+    margin: 1rem;
+        display: flex;
+    } 
+    .hero_content p{
+        margin-left: 5rem;
+        padding-bottom: 30px;
+        letter-spacing:auto; 
+        text-align: justify;
+        font-size: 1.4rem;
+        
+    }
+    figure{
+        display: flex;
+        justify-content: center;
+    }
+    figure img{
+        height: 400px;
+        
+    }
+    #heroButton{ 
+        margin-left: 19rem;
+        border-radius: 14px;
+        padding: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 1px 3px 10px black;
+        background-color: hsl(221.91deg 100% 60.98%);
+    }
+    /*Cards Section*/
+
+    .cards_section{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: hsl(240deg 5% 7.84%);
+        
+    }
+    .cards_content{
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem;
+        background-color:  hsl(228deg 9.8% 10%);
+        padding: 14px;
+        width: 90%;
+        height: 80%;
+        border-radius: 1.3rem;
+        align-items: center;
+        
+        
+    }
+    /* Estilização dos cards */
+    .cards_titulo{
+        display: flex;
+        align-items: center;
+    }
+    .cards_titulo img{
+        height: 36px;
+    }
+    .cards{display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:  hsl(228, 9%, 10%);
+        height: 85%;
+        padding: 15px;
+        
+        
+    }
+    .cards:hover{
+        background-color: hsl(230deg 14.63% 16.08%);
+        transition: .7s;
+        border-radius: 10px;
+    }
+    .analiseCards{
+        display: flex;
+        gap:15px;
+    }
+    /* classes para estilização de caso seja lucro ou queda da criptomoeda**/
+    .perda{
+        background-color: hsl(0, 64%, 52%);
+        border-radius: 10px;
+        width: 3.5rem;
+        text-align: center;
+        }
+    .ganho{
+    background-color: hsl(142, 43%, 54%);
+        border-radius: 10px;
+        width: 3.5rem;
+        text-align: center;
+        font-size:.9rem;
+        
+        }
+
+    /* Estilização da Descrição das criptomoedas*/
+
+    .descricao{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        
+    }
+
+    .botao{
+        margin: 8px;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: hsl(221.91deg 100% 60.98%);
+        color: white;
+        text-shadow: 0px 5px 15px black;
+        cursor: pointer;
+        border: none;
+    }
+
+    .botao:hover{
+        background-color: hsl(222, 72%, 53%);
+        transition: .4s;
+    }
+    
+        
+    .texto {
+            
+            text-align: start;
+            width: 300px;
+            text-wrap: wrap; 
+            display: none;
+            
+        }
+
+    
+    /* Estilização da tabela de criptomoedas */
+
+    .tabelas{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content_table{
+        border-collapse: collapse;
+        margin: 24px 0;
+        font-size: 0.9em;
+        min-width: 400px;
+        width: 80%;
+
+
+    }
+    .Thead ,tr{
+        color: white;
+        text-align: left;
+        font-weight: bold;
+    }
+    .content_table th,
+    .content_table td{
+        padding: 12px 15px;
+
+    }
+    .content_table tr:hover{
+        background-color:hsl(230, 15%, 16%) ;
+        transition: .3s;
+        cursor: pointer;
+    }
+    .content_table tbody tr{
+        border-bottom: 1px solid #e5e7eb;
+    }
+    .linhaTabela{
+        display: flex;
+        align-items: center;
+    }
+    .linhaTabela img{
+        padding: 3px;
+        height: 35px;
+    }
+    /* Estilização do input Search */
+    #search{
+        height: 30px;
+        width: 40%;
+        border: none;
+        border-radius: 6px;
+        margin-top: 15px;
+        padding: 9px;
+        font-size: .9rem;
+        font-weight:  500;
+
+        
+    }
+    #search:focus{
+        border: color(hsl(227, 14%, 13%));
+        
+    }
+    /* rodape*/
+    footer{
+        
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin: 20px;
+    }
+    .icones{
+        margin-right: 20px;
+    }
+    .icones a{
+        margin-left: 10px;
+    }
+    .conversor{
+        display: flex;
+        justify-content: center;
+        height: 15rem;
+        
+    }
+    .conversor > div{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .conversor > div > p{
+    border: solid 2px rgb(187, 180, 180);
+    padding: 25px;
+    margin: 20px;
+    font-size: 1rem;
+    }
+    #resultado{
+        width: 20rem;
+        background-color: rgba(199, 198, 198, 0.37);
+        border-radius: 10px;
+        text-align: center;
+    }
+    select{
+        font-size: .9rem;
+        font-weight: 500;
+        width: 10.3rem;
+        border-radius: 5px;
+        border:none;
+    }
+    #valor{
+        width: 10rem;
+        border-radius: 5px;
+        border:none;
+        padding: 1.5px;
+        font-weight: 500;
+        font-size: .9rem;
+    }
+    .conversor_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+    }
+    button{
+        padding: 8px;
+        margin: 10px;
+        width: 8rem;
+        border-radius: 10px;
+        background-color: hsl(221.91deg 100% 60.98%) ;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0px 6px 15px black;
+    }
+    button:hover{
+        background-color: hsl(222, 72%, 53%);
+        transition: .6s;
+    }
+
+
+ 
+
+/* responsividade pra celular*/
+@media only screen and (max-width: 768px) {
+    body {
+      font-size: 14px; /* Ajuste de fonte para telas menores */
+    }
+  
+    header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      nav a::after {
+        display: none; /* Remover a linha sob o link em telas menores */
+      }
+    .hero_section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .hero_content p {
+      margin-left: 0; /* Removr a margem lateral em telas menores */
+    }
+  
+    figure img {
+      height: auto;
+      max-width: 100%; /* Imagens responsivas */
+    }
+  
+    #heroButton {
+      margin-left: 0; /* Ajuste de margem */
+    }
+  
+    .cards_section {
+      height: auto;
+    }
+  
+    .cards_content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .cards_titulo img {
+      height: 24px;
+    }
+  
+    .descricao {
+      text-align: center;
+    }
+  
+    .ultimosDias  {
+        display: none;
+    }
+    
+  
+    #search {
+      width: 100%;
+    }
+  
+    footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .conversor {
+      height: auto;
+    }
+  
+    #resultado {
+      width: 100%;
+    }
+  
+    select,
+    #valor {
+      width: 100%;
+    }
+  
+    .conversor_content {
+      text-align: center;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
